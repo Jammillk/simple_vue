@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>第一个vue</title>
+  </head>
+
+  <body>
+    <div id="app">{{message}}</div>
+    <script>
+      var app = new Vue({
+        //   el:element
+        el: "#app",
+        // viewmodel与model关联起来
+        data: {
+          message: "Hello Vue! 123222",
+        },
+      });
+    </script>
+  </body>
+</html>
